@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/edit.css">
+
+</head>
+
+<body>
+
+
+
+    <center>
+        <h1>Task Planner</h1>
+    </center>
+    <div class="inputs">
+        <div class="task">
+            <form action="#" class="myForm">
+                <label for="taskname">Task Name</label>
+                <input name="taskname" type="text" id="taskname">
+                <p id="taskLabel" style="color:red;"></p>
+
+                <label for="subtaskname">Sub task Name</label>
+                <input name="" type="text" id="subtaskname">
+                <p id="subtaskLabel" style="color:red;"></p>
+
+                <label for="startdate">Start date</label>
+                <input type="date" name="startdate" id="startdate">
+                <p id="startdatelabel" style="color:red;"></p>
+
+                <label for="enddate">End date</label>
+                <input type="date" name="enddate" id="enddate">
+                <p id="enddateLabel" style="color:red;"></p>
+
+                <label for="status">Status</label>
+                <select id="status" class="status1">
+                <option value="none">select</option>
+                <option value="Inprogress">Inprogress</option>
+                <option value="passed">due passed</option>
+                <option value="completed">completed</option>
+                <option value="cancled">cancelled</option>
+            </select>
+                <p id="statusLabel" style="color:red;"></p>
+                <p id="disc" style="color: red;"></p>
+
+                <input type="button" value="Add Detail" onclick="data()" class="custom-button add">
+
+            </form>
+        </div>
+        <input type=" text" id="search" onkeyup="search()" class="searchbar" placeholder="Search...">
+
+        <table class="table">
+            <tr>
+                <th>task</th>
+                <th>sub_task</th>
+                <th>action</th>
+            </tr>
+            <tbody id="table1"></tbody>
+        </table>
+    </div>
+    <div class="edit-data" id="edit1">
+        <div class="input-field1">
+            <form action="#" class="myForm1">
+                <input type="hidden" id="idx">
+                <label for="edit-taskname">Task Name</label>
+                <input name="edit-taskname" type="text" id="edit-taskname">
+                <p id="empIdErrorLabel" style="color:red;"></p>
+
+                <label for="edit-startdate">startdate</label>
+                <input type="date" name="edit-startdate" id="edit-startdate">
+                <p id="empIdErrorLabel" style="color:red;"></p>
+
+                <label for="edit-enddate">enddate</label>
+                <input type="date" name="edit-enddate" id="edit-enddate">
+                <p id="empIdErrorLabel" style="color:red;"></p>
+
+                <label for="edit-status">status</label>
+                <select id="edit-status">
+            <option value="none">Inprogress</option>
+            <option value="passed">due passed</option>
+            <option value="completed">completed</option>
+            <option value="cancled">cancelled</option>
+        </select>
+                <p id="empIdErrorLabel" style="color:red;"></p>
+
+                <input type="button" value="Update Detail" onclick="closepopup()" class="custom-button close">
+            </form>
+        </div>
+
+    </div>
+
+    <script src="script/script.js"></script>
+    <script src="script/edit.js"></script>
+    <script src="script/validation.js"></script>
+    <script src="script/search.js"></script>
+    <script src="script/delete.js"></script>
+
+
+
+
+</body>
+
+
+
+
+</html>

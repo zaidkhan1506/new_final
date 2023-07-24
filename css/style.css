@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-size: large;
+}
+
+.myForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+label {
+    margin: 5%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+}
+
+.custom-button:active {
+    background-color: #3e8e41;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px -56px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* .status1 {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+} */
+
+.add {
+    padding-right: 50px;
+}
+
+.close {
+    padding: 0;
+}
+
+.searchbar {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
